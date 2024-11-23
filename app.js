@@ -10,7 +10,9 @@
 
 // const seatLeft = document.getElementById("seats-left");
 // const convertedSeatLeft = parseInt(seatLeft);
+const seatLeft = getConvertedValue("seats-left"); 
 
+const seatCounter = getConvertedValue("seat-counter");
 
 function getConvertedValue(id) {
     const seatPrice = document.getElementById(id).innerText;
@@ -18,6 +20,6 @@ function getConvertedValue(id) {
     return convertedPrice;
 }
 
-const result = getConvertedValue("per-seat");
+const result = getConvertedValue("seat-counter");
 console.log(result);
 
